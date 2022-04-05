@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="collection" class="com.cognizant.collectionPgm.StudentCollection">
+        <property name="studentDetails" >
+            <list>
+                <ref bean="vin"/>
+                <ref bean="ask"/>
+                <ref bean="nir"/>
+                <ref bean="ros"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="vin" class="com.cognizant.collectionPgm.StudentDetails">
+        <property name="registerNo" value="66"/>
+        <property name="name" value="vinoth"/>
+        <property name="Address" value="chennai"/>
+    </bean>
+    <bean id="ask" class="com.cognizant.collectionPgm.StudentDetails">
+        <property name="registerNo" value="67"/>
+        <property name="name" value="ashok"/>
+        <property name="Address" value="karur"/>
+    </bean>
+    <bean id="nir" class="com.cognizant.collectionPgm.StudentDetails">
+        <property name="registerNo" value="68"/>
+        <property name="name" value="Niranjan"/>
+        <property name="Address" value="Chennai"/>
+    </bean>
+    <bean id="ros" class="com.cognizant.collectionPgm.StudentDetails">
+        <property name="registerNo" value="69"/>
+        <property name="name" value="Roshan"/>
+        <property name="Address" value="Chennai"/>
+    </bean>
+
+
+
+</beans>
